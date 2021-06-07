@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/b67e368fa6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Simple Calculator Using HTML CSS and JavaScript DOM</title>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="display-header">
+                <p>9:41</p>
+                <div class="icon-header">
+                    <i class="fas fa-signal fa-xs"></i>
+                    <i class="fas fa-wifi fa-xs"></i>
+                    <i class="fas fa-battery-full fa-xs"></i>
+                </div>
+            </div>
+            <div class="display-result">
+                <p>45 + (1250 x 100) / 10</p>
+                <h1>12,545</h1>
+            </div>
+            <div class="display-input">
+                <div class="btn">
+                    <button onclick="deleteData()" class="btn-input red-blur hover-red">C</button>
+                    <button onclick="input('(')" class="btn-input">(</button>
+                    <button onclick="input(')')" class="btn-input">)</button>
+                    <button onclick="input('/')" class="btn-input yellow text-white hover-yellow">/</button>
+                </div>
+                <div class="btn">
+                    <button onclick="input(7)" class="btn-input">7</button>
+                    <button onclick="input(8)" class="btn-input">8</button>
+                    <button onclick="input(9)" class="btn-input">9</button>
+                    <button onclick="input('x')" class="btn-input yellow text-white hover-yellow">X</button>
+                </div>
+                <div class="btn">
+                    <button onclick="input(4)" class="btn-input">4</button>
+                    <button onclick="input(5)" class="btn-input">5</button>
+                    <button onclick="input(6)" class="btn-input">6</button>
+                    <button onclick="input('-')" class="btn-input yellow text-white hover-yellow">-</button>
+                </div>
+                <div class="btn">
+                    <button onclick="input(1)" class="btn-input">1</button>
+                    <button onclick="input(2)" class="btn-input">2</button>
+                    <button onclick="input(3)" class="btn-input">3</button>
+                    <button onclick="input('+')" class="btn-input yellow text-white hover-yellow">+</button>
+                </div>
+                <div class="btn">
+                    <button onclick="input(0)" class="btn-input-0">0</button>
+                    <button onclick="input('.')" class="btn-input">.</button>
+                    <button onclick="result()" class="btn-input green text-white hover-green">=</button>
+                </div>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
